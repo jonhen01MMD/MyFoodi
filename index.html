@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyFoodi</title>
+  <script src="https://kit.fontawesome.com/6834b5a799.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col min-h-screen bg-gray-50 text-gray-800">
+  <!-- Navigation -->
+  <nav class="bg-gradient-to-r from-blue-600 to-indigo-600 shadow-md p-4 text-white">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-3xl font-extrabold">MyFoodi</a>
+      <div class="space-x-4">
+        <a href="index.html" class="hover:text-gray-200">Home</a>
+        <a href="planner.html" class="hover:text-gray-200">Planlægger</a>
+        <a href="about.html" class="hover:text-gray-200">About</a>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Main content -->
+  <main class="flex-grow container mx-auto p-6 max-w-[900px]">
+    <section class="my-8">
+      <h2 class="text-4xl font-bold mb-6 text-center text-indigo-700">Søg i madretter</h2>
+      <div class="bg-white rounded-lg shadow p-6">
+        <div class="flex mb-4">
+          <input id="search-input" type="text" placeholder="Indtast en ret..." class="border p-2 flex-grow rounded-l">
+          <button id="search-btn" class="bg-blue-600 text-white py-2 px-4 rounded-r">Søg</button>
+        </div>
+        <div id="filters" class="flex items-center justify-between">
+          <div class="flex space-x-4 items-center">
+            <select id="diet-filter" class="border p-2 rounded">
+              <option value="">Alle diæter</option>
+              <option value="vegansk">Vegansk</option>
+              <option value="glutenfri">Glutenfri</option>
+            </select>
+            <input id="max-price" type="range" min="0" max="300" value="300" class="border p-2 rounded w-32 md:w-auto">
+            <output id="max-price-output" class="p-2">300 kr</output>
+          </div>
+          <div>
+            <button id="view-toggle" class="bg-gray-600 text-white py-2 px-4 rounded">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="results" class="mt-4">
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white p-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 MyFoodi. Alle rettigheder forbeholdes.</p>
+    </div>
+  </footer>
+  
+  <script src="js/search.js"></script>
+</body>
+</html>

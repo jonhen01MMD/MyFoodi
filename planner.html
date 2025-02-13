@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - MyFoodi</title>
+  <script src="https://kit.fontawesome.com/6834b5a799.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .suggestion-box { transition: opacity 0.2s ease; }
+    @media (max-width: 640px) {
+      th, td { max-width: none !important; white-space: normal; }
+    }
+  </style>
+</head>
+
+<body class="flex flex-col min-h-screen bg-gray-50 text-gray-800">
+  <!-- Navigation -->
+  <nav class="bg-gradient-to-r from-blue-600 to-indigo-600 shadow-md p-4 text-white">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-3xl font-extrabold">MyFoodi</a>
+      <div class="space-x-4">
+        <a href="index.html" class="hover:text-gray-200">Home</a>
+        <a href="planner.html" class="hover:text-gray-200">Planlægger</a>
+        <a href="about.html" class="hover:text-gray-200">About</a>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Main content: Weekly meal plan tool -->
+  <main class="flex-grow container mx-auto p-8 max-w-5xl">
+    <h2 class="text-4xl font-bold mb-6 text-center text-indigo-700">Ugens Madplan</h2>
+    <p class="mb-8 text-center text-lg text-gray-600">Klik i en celle for at indtaste din opskrift.</p>
+    <div class="overflow-x-auto shadow-lg rounded-lg">
+      <table id="mealplanTable" class="w-full table-auto border-separate border-spacing-0">
+        <thead class="bg-indigo-700 text-white">
+          <tr>
+            <th class="border p-4">Dag</th>
+            <th class="border p-4">Morgenmad</th>
+            <th class="border p-4">Frokost</th>
+            <th class="border p-4">Aftensmad</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white">
+          <tr>
+            <td class="border p-4 font-semibold">Mandag</td>
+            <td class="border p-4" contenteditable="true" data-day="mandag" data-meal="morgenmad"></td>
+            <td class="border p-4" contenteditable="true" data-day="mandag" data-meal="frokost"></td>
+            <td class="border p-4" contenteditable="true" data-day="mandag" data-meal="aftensmad"></td>
+          </tr>
+          <tr>
+            <td class="border p-4 font-semibold">Tirsdag</td>
+            <td class="border p-4" contenteditable="true" data-day="tirsdag" data-meal="morgenmad"></td>
+            <td class="border p-4" contenteditable="true" data-day="tirsdag" data-meal="frokost"></td>
+            <td class="border p-4" contenteditable="true" data-day="tirsdag" data-meal="aftensmad"></td>
+          </tr>
+          <tr>
+            <td class="border p-4 font-semibold">Onsdag</td>
+            <td class="border p-4" contenteditable="true" data-day="onsdag" data-meal="morgenmad"></td>
+            <td class="border p-4" contenteditable="true" data-day="onsdag" data-meal="frokost"></td>
+            <td class="border p-4" contenteditable="true" data-day="onsdag" data-meal="aftensmad"></td>
+          </tr>
+          <tr>
+            <td class="border p-4 font-semibold">Torsdag</td>
+            <td class="border p-4" contenteditable="true" data-day="torsdag" data-meal="morgenmad"></td>
+            <td class="border p-4" contenteditable="true" data-day="torsdag" data-meal="frokost"></td>
+            <td class="border p-4" contenteditable="true" data-day="torsdag" data-meal="aftensmad"></td>
+          </tr>
+          <tr>
+            <td class="border p-4 font-semibold">Fredag</td>
+            <td class="border p-4" contenteditable="true" data-day="fredag" data-meal="morgenmad"></td>
+            <td class="border p-4" contenteditable="true" data-day="fredag" data-meal="frokost"></td>
+            <td class="border p-4" contenteditable="true" data-day="fredag" data-meal="aftensmad"></td>
+          </tr>
+          <tr>
+            <td class="border p-4 font-semibold">Lørdag</td>
+            <td class="border p-4" contenteditable="true" data-day="loerdag" data-meal="morgenmad"></td>
+            <td class="border p-4" contenteditable="true" data-day="loerdag" data-meal="frokost"></td>
+            <td class="border p-4" contenteditable="true" data-day="loerdag" data-meal="aftensmad"></td>
+          </tr>
+          <tr>
+            <td class="border p-4 font-semibold">Søndag</td>
+            <td class="border p-4" contenteditable="true" data-day="soendag" data-meal="morgenmad"></td>
+            <td class="border p-4" contenteditable="true" data-day="soendag" data-meal="frokost"></td>
+            <td class="border p-4" contenteditable="true" data-day="soendag" data-meal="aftensmad"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="mt-10 p-6 bg-white shadow rounded-lg">
+      <h3 class="text-2xl font-bold mb-4 text-indigo-700">Ugens pris og indkøbsliste</h3>
+      <p id="weekly-price" class="mb-4 text-xl">Total Pris: 0 kr</p>
+      <div id="grocery-list">
+        <h4 class="font-semibold text-lg mb-2">Indkøbsliste:</h4>
+        <ul class="list-disc ml-6 text-gray-700">
+        </ul>
+      </div>
+    </div>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-200 p-4">
+    <div class="container mx-auto text-center">
+      <p class="text-sm">&copy; 2025 MyFoodi. Alle rettigheder forbeholdes.</p>
+    </div>
+  </footer>
+  
+  <script src="js/mealplan.js"></script>
+</body>
+</html>

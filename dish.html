@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madopskift Detaljer</title>
+  <script src="https://kit.fontawesome.com/6834b5a799.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #dish-details, #dish-details * {
+        visibility: visible;
+      }
+      #dish-details {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body class="flex flex-col min-h-screen bg-gray-50 text-gray-800">
+  <!-- Navigation -->
+  <nav class="bg-gradient-to-r from-blue-600 to-indigo-600 shadow-md p-4 text-white">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-3xl font-extrabold">MyFoodi</a>
+      <div class="space-x-4">
+        <a href="index.html" class="hover:text-gray-200">Home</a>
+        <a href="planner.html" class="hover:text-gray-200">Planlægger</a>
+        <a href="about.html" class="hover:text-gray-200">About</a>
+      </div>
+    </div>
+  </nav>
+      
+  <div class="container mx-auto p-4 max-w-[900px] pt-10">
+    <a href="index.html" class="text-blue-600 font-semibold">&larr; Tilbage til oversigten</a>
+  </div>
+  <main class="flex-grow container mx-auto p-6">
+    <div id="dish-details" class="bg-white rounded-lg shadow p-6 max-w-[900px] mx-auto relative">
+      <p class="text-center">Indlæser madopskrift...</p>
+    </div>
+    
+    <!-- Updated comment field with name and star rating -->
+    <section id="comments" class="bg-white rounded-lg shadow p-6 max-w-[900px] mx-auto mt-20">
+      <h3 class="text-2xl font-bold mb-4">Kommentar</h3>
+      <form id="commentForm">
+        <div class="flex gap-4 mb-4">
+          <div class="flex-1">
+            <label for="commentName" class="block text-sm font-medium mb-2">Navn:</label>
+            <input type="text" id="commentName" class="w-full p-2 border rounded" placeholder="Dit navn">
+          </div>
+          <div class="flex-1">
+            <label for="commentRating" class="block text-sm font-medium mb-2">Giv stjerner:</label>
+            <select id="commentRating" class="w-full p-2 border rounded">
+              <option value="" disabled selected>Vælg antal stjerner</option>
+              <option value="1">1 stjerne</option>
+              <option value="2">2 stjerner</option>
+              <option value="3">3 stjerner</option>
+              <option value="4">4 stjerner</option>
+              <option value="5">5 stjerner</option>
+            </select>
+          </div>
+        </div>
+        <textarea id="commentText" class="w-full p-2 border rounded mb-4" rows="4" placeholder="Skriv din kommentar her..."></textarea>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Send Kommentar</button>
+      </form>
+      <div id="commentsList" class="mt-4">
+      </div>
+    </section>
+  </main>
+  <!-- Added footer -->
+  <footer class="bg-blue-600 text-white p-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 MyFoodi. Alle rettigheder forbeholdes.</p>
+    </div>
+  </footer>
+
+  <script src="js/dish.js"></script>
+</body>
+</html>

@@ -1,0 +1,452 @@
+[
+    {
+      "name": "Pizza Margherita",
+      "price": "50",
+      "description": "Klassisk italiensk pizza med tomatsauce og mozzarella.",
+      "servings": 2,
+      "steps": [
+        "Forvarm ovnen til 220 grader.",
+        "Rul dejen ud og tilsæt tomatsauce.",
+        "Drys med mozzarella og bag i 10-12 minutter."
+      ],
+      "ingredients": ["Tomatsauce", "Mozzarella", "Basilikum"],
+      "glutenfri": false,
+      "vegansk": false
+    },
+    {
+      "name": "Spaghetti Bolognese",
+      "price": "60",
+      "description": "Spaghetti med en kraftig kødsovs.",
+      "servings": 4,
+      "steps": [
+        "Kog spaghetti efter anvisning på pakken.",
+        "Sauter løg og hvidløg, tilsæt hakket kød.",
+        "Rør tomatsauce i og lad simre i 20 minutter."
+      ],
+      "ingredients": ["Spaghetti", "Hakket kød", "Tomatsauce", "Løg", "Hvidløg"],
+      "glutenfri": false,
+      "vegansk": false
+    },
+    {
+      "name": "Sushi",
+      "price": "80",
+      "description": "Frisk fisk og ris formet til lækre sætter.",
+      "servings": 2,
+      "steps": [
+        "Kog og afkøl risene med eddike.",
+        "Skær fisk og grøntsager i strimler.",
+        "Rul ris og fyld sammen i nori ark."
+      ],
+      "ingredients": ["Ris", "Fisk", "Nori", "Grøntsager"],
+      "glutenfri": true,
+      "vegansk": false
+    },
+    {
+      "name": "Tacos",
+      "price": "55",
+      "description": "Mexicansk tortillaret med fyld og frisk salsa.",
+      "servings": 3,
+      "steps": [
+        "Varm tortillas i ovnen eller på panden.",
+        "Forbered fyld med kød og grøntsager.",
+        "Saml tacos med salsa og tilbehør."
+      ],
+      "ingredients": ["Tortillas", "Kød", "Grøntsager", "Salsa"],
+      "glutenfri": false,
+      "vegansk": false
+    },
+    {
+      "name": "Curry",
+      "price": "50",
+      "description": "Krydret karryret med ris og grøntsager.",
+      "servings": 4,
+      "steps": [
+        "Sauter løg og krydderier i en gryde.",
+        "Tilsæt grøntsager og evt. kød.",
+        "Rør kokosmælk i og lad simre til maden er mør."
+      ],
+      "ingredients": ["Ris", "Grøntsager", "Kød (valgfrit)", "Kokosmælk", "Krydderier"],
+      "glutenfri": true,
+      "vegansk": false
+    },
+    {
+      "name": "Salat Nicoise",
+      "price": "65",
+      "description": "Frisk salat med tun, æg og oliven.",
+      "servings": 2,
+      "steps": [
+        "Kog æggene til de er faste.",
+        "Bland grøntsager og tun i en skål.",
+        "Top med en vinaigrette dressing."
+      ],
+      "ingredients": ["Tun", "Æg", "Grøntsager", "Oliven"],
+      "glutenfri": true,
+      "vegansk": false
+    },
+    {
+      "name": "Risotto",
+      "price": "70",
+      "description": "Italiensk risret med svampe og parmesan.",
+      "servings": 4,
+      "steps": [
+        "Sauter løg og ris i en gryde.",
+        "Tilsæt bouillon lidt ad gangen og rør ofte.",
+        "Rør svampe og parmesan i og lad hvile i 5 minutter."
+      ],
+      "ingredients": ["Ris", "Svampe", "Parmesan", "Bouillon", "Løg"],
+      "glutenfri": true,
+      "vegansk": false
+    },
+    {
+      "name": "Burger",
+      "price": "75",
+      "description": "Saftig burger med bøf og tilbehør.",
+      "servings": 2,
+      "steps": [
+        "Form bøffer og steg på panden.",
+        "Saml burger med salat og dressing.",
+        "Server med pommes frites."
+      ],
+      "ingredients": ["Bøf", "Burgerbolle", "Salat", "Dressing", "Pommes frites"],
+      "glutenfri": false,
+      "vegansk": false
+    },
+    {
+      "name": "Pasta Carbonara",
+      "price": "55",
+      "description": "Pasta med bacon og æggesauce.",
+      "servings": 3,
+      "steps": [
+        "Kog pasta efter anvisning på pakken.",
+        "Steg bacon og hvidløg på panden.",
+        "Rør æggesauce i og bland med pasta."
+      ],
+      "ingredients": ["Pasta", "Bacon", "Æg", "Hvidløg"],
+      "glutenfri": false,
+      "vegansk": false
+    },
+    {
+      "name": "Kylling i karry",
+      "price": "60",
+      "description": "Kylling i karrysauce med ris og grøntsager.",
+      "servings": 4,
+      "steps": [
+        "Sauter løg og karry i en gryde.",
+        "Tilsæt kylling og grøntsager.",
+        "Rør fløde i og lad simre i 20 minutter."
+      ],
+      "ingredients": ["Kylling", "Ris", "Grøntsager", "Fløde", "Karry"],
+      "glutenfri": true,
+      "vegansk": false
+    },
+    {
+      "name": "Pizza Pepperoni",
+      "price": "55",
+      "description": "Italiensk pizza med krydret pepperoni og ekstra ost.",
+      "servings": 2,
+      "steps": [
+        "Forvarm ovnen til 220 grader.",
+        "Rul dejen ud, tilsæt tomatsauce og ingredienser.",
+        "Top med pepperoni og ost, bag i 10-12 minutter."
+      ],
+      "ingredients": ["Tomatsauce", "Pepperoni", "Mozzarella", "Ost"],
+      "glutenfri": false,
+      "vegansk": false
+    },
+    {
+      "name": "Pizza Diavola",
+      "price": "60",
+      "description": "Krydret pizza med salami og chili.",
+      "servings": 2,
+      "steps": [
+        "Forvarm ovnen til 220 grader.",
+        "Rul dejen ud, tilsæt tomatsauce.",
+        "Tilsæt salami, chili og ost, bag i 10-12 minutter."
+      ],
+      "ingredients": ["Tomatsauce", "Salami", "Chili", "Ost", "Mozzarella"],
+      "glutenfri": false,
+      "vegansk": false
+    },
+    {
+      "name": "Pizza Vegetariana",
+      "price": "50",
+      "description": "Frisk vegetarisk pizza med masser af grøntsager.",
+      "servings": 2,
+      "steps": [
+        "Forvarm ovnen til 220 grader.",
+        "Rul dejen ud, tilsæt tomatsauce.",
+        "Fordel grøntsager og ost, bag i 10-12 minutter."
+      ],
+      "ingredients": ["Tomatsauce", "Grøntsager", "Ost", "Mozzarella"],
+      "glutenfri": false,
+      "vegansk": false
+    },
+    {
+      "name": "Falafel Wrap",
+      "price": "45",
+      "description": "Krydret falafel i en wrap med hummus og grøntsager.",
+      "servings": 1,
+      "steps": [
+        "Bland falafel ingredienser og form små boller.",
+        "Steg falafelboller let på panden.",
+        "Pak i en wrap med hummus og grøn salat."
+      ],
+      "ingredients": ["Kikærter", "Urter", "Hummus", "Grøntsager", "Wrap"],
+      "glutenfri": false,
+      "vegansk": true
+    },
+    {
+      "name": "Ramen Noodle Soup",
+      "price": "70",
+      "description": "Varm og krydret ramen med nudler og grøntsager.",
+      "servings": 2,
+      "steps": [
+        "Kog nudlerne i rigeligt vand.",
+        "Tilbered bouillon med krydderier og grøntsager.",
+        "Server nudlerne i en skål med bouillon og toppings."
+      ],
+      "ingredients": ["Nudler", "Bouillon", "Grøntsager", "Krydderier", "Kød (valgfrit)"],
+      "glutenfri": false,
+      "vegansk": false
+    },
+    {
+      "name": "Poké Bowl",
+      "price": "75",
+      "description": "Frisk skål med ris, fisk og sprøde grøntsager.",
+      "servings": 2,
+      "steps": [
+        "Kog risene og lad dem køle.",
+        "Skær fisk og grøntsager i små stykker.",
+        "Bland ris med dressing og læg toppings ovenpå."
+      ],
+      "ingredients": ["Ris", "Fisk", "Grøntsager", "Sojasauce", "Sesamfrø"],
+      "glutenfri": false,
+      "vegansk": false
+    },
+    {
+      "name": "Tomatsuppe",
+      "price": "40",
+      "description": "Cremet suppe med solmodne tomater.",
+      "servings": 3,
+      "steps": [
+        "Svits løg og hvidløg i en gryde.",
+        "Tilsæt tomater og vand, lad simre.",
+        "Blend suppen og smag til med krydderier."
+      ],
+      "ingredients": ["Tomater", "Løg", "Hvidløg", "Vand", "Krydderier"],
+      "glutenfri": true,
+      "vegansk": true
+    },
+    {
+      "name": "Stegte Ris",
+      "price": "45",
+      "description": "Klassiske stegte ris med æg og grøntsager.",
+      "servings": 2,
+      "steps": [
+        "Opvarm olie på en pande.",
+        "Steg ris, grøntsager og æg sammen.",
+        "Tilsæt sojasauce og rør godt rundt."
+      ],
+      "ingredients": ["Ris", "Æg", "Grøntsager", "Sojasauce"],
+      "glutenfri": false,
+      "vegansk": false
+    },
+    {
+      "name": "Vafler",
+      "price": "35",
+      "description": "Sprøde og luftige vafler til morgenmaden.",
+      "servings": 4,
+      "steps": [
+        "Rør mel, æg og mælk sammen.",
+        "Varm vaffeljernet op.",
+        "Hæld dejen i og bag til vaflerne er gyldne."
+      ],
+      "ingredients": ["Mel", "Æg", "Mælk", "Sukker", "Smør"],
+      "glutenfri": false,
+      "vegansk": false
+    },
+    {
+      "name": "Pandekager",
+      "price": "30",
+      "description": "Lette pandekager til brunch eller dessert.",
+      "servings": 4,
+      "steps": [
+        "Pisk alle ingredienser sammen.",
+        "Hæld dejen på en varm pande.",
+        "Vend pandekagen når den er gylden.",
+        "Server med sirup eller syltetøj."
+      ],
+      "ingredients": ["Mel", "Æg", "Mælk", "Smør", "Sukker"],
+      "glutenfri": false,
+      "vegansk": false
+    },
+    {
+      "name": "Frugtsalat",
+      "price": "25",
+      "description": "Frisk og farverig salat med sæsonens frugter.",
+      "servings": 2,
+      "steps": [
+        "Skær frugterne i mundrette stykker.",
+        "Bland i en skål og server køligt."
+      ],
+      "ingredients": ["Æble", "Banan", "Druer", "Bær"],
+      "glutenfri": true,
+      "vegansk": true
+    },
+    {
+      "name": "French Toast",
+      "price": "40",
+      "description": "Søde skiver brød dyppet i æggeblanding.",
+      "servings": 2,
+      "steps": [
+        "Pisk æg, mælk og kanel sammen.",
+        "Dyp brødskiverne i blandingen.",
+        "Steg på panden til de er gyldne."
+      ],
+      "ingredients": ["Brød", "Æg", "Mælk", "Kanel"],
+      "glutenfri": false,
+      "vegansk": false
+    },
+    {
+      "name": "Bagt Laks",
+      "price": "85",
+      "description": "Ovn-bagt laks med citron og urter.",
+      "servings": 2,
+      "steps": [
+        "Forvarm ovnen til 200 grader.",
+        "Krydr laksen med citron, salt og peber.",
+        "Bag i 20 minutter."
+      ],
+      "ingredients": ["Laks", "Citron", "Salt", "Peber", "Urter"],
+      "glutenfri": true,
+      "vegansk": false
+    },
+    {
+      "name": "Vegetarisk Lasagne",
+      "price": "70",
+      "description": "Lagvis lasagne med grøntsager og tomatsauce.",
+      "servings": 4,
+      "steps": [
+        "Forbered grøntsagerne ved at hakke dem.",
+        "Anret lag af lasagneplader, grøntsager og tomatsauce.",
+        "Bag i ovnen i 40 minutter."
+      ],
+      "ingredients": ["Lasagneplader", "Grøntsager", "Tomatsauce", "Ost"],
+      "glutenfri": false,
+      "vegansk": false
+    },
+    {
+      "name": "Grillet Kylling",
+      "price": "60",
+      "description": "Saftige kyllingebryst grillet til perfektion.",
+      "servings": 2,
+      "steps": [
+        "Mariner kyllingen i krydderier.",
+        "Grill kyllingen i ca. 10 minutter."
+      ],
+      "ingredients": ["Kyllingebryst", "Krydderier", "Olivenolie"],
+      "glutenfri": true,
+      "vegansk": false
+    },
+    {
+      "name": "Bøf Stroganoff",
+      "price": "90",
+      "description": "Klassisk russisk ret med bøf i cremet sauce.",
+      "servings": 4,
+      "steps": [
+        "Skær bøffen i strimler.",
+        "Sauter løg og svampe.",
+        "Tilsæt bøffen og lad simre.",
+        "Server med ris eller pasta."
+      ],
+      "ingredients": ["Bøf", "Løg", "Svampe", "Fløde", "Krydderier"],
+      "glutenfri": true,
+      "vegansk": false
+    },
+    {
+      "name": "Æbleskive",
+      "price": "40",
+      "description": "Traditionel dansk snack med æblefyld.",
+      "servings": 3,
+      "steps": [
+        "Hæld dejen i en æbleskivepande og bag."
+      ],
+      "ingredients": ["Mel", "Æg", "Mælk", "Æbler", "Sukker"],
+      "glutenfri": false,
+      "vegansk": false
+    },
+    {
+      "name": "Kold Pastasalat",
+      "price": "50",
+      "description": "Frisk pastasalat med grøntsager og en let dressing.",
+      "servings": 4,
+      "steps": [
+        "Kog pastaen og afkøl den.",
+        "Hak grøntsagerne.",
+        "Bland pastaen med grøntsagerne.",
+        "Tilsæt dressing og krydderier.",
+        "Server kold."
+      ],
+      "ingredients": ["Pasta", "Grøntsager", "Dressing", "Krydderier"],
+      "glutenfri": false,
+      "vegansk": true
+    },
+    {
+      "name": "Bagt Sweet Potato",
+      "price": "45",
+      "description": "Sød kartoffel bagt med krydderier.",
+      "servings": 2,
+      "steps": [
+        "Forvarm ovnen til 200 grader.",
+        "Krydr sweet potato med olie og krydderier.",
+        "Bag i 30 minutter."
+      ],
+      "ingredients": ["Sweet Potato", "Olivenolie", "Krydderier"],
+      "glutenfri": true,
+      "vegansk": true
+    },
+    {
+      "name": "Shakshuka",
+      "price": "55",
+      "description": "Mellemøstlig ret med pocherede æg i tomatsauce.",
+      "servings": 2,
+      "steps": [
+        "Svits løg og peberfrugt i en pande.",
+        "Tilsæt tomater og lad simre.",
+        "Lav små fordybninger og slå æg i.",
+        "Lad æggene pochere i 5 minutter."
+      ],
+      "ingredients": ["Æg", "Tomater", "Løg", "Peberfrugt", "Krydderier"],
+      "glutenfri": true,
+      "vegansk": false
+    },
+    {
+      "name": "Quinoa Salat",
+      "price": "55",
+      "description": "Let salat med quinoa, grøntsager og en frisk dressing.",
+      "servings": 2,
+      "steps": [
+        "Kog quinoa og lad den køle af.",
+        "Skær grøntsagerne i tern.",
+        "Bland quinoa med grøntsager og dressing."
+      ],
+      "ingredients": ["Quinoa", "Grøntsager", "Dressing", "Urter"],
+      "glutenfri": true,
+      "vegansk": true
+    },
+    {
+      "name": "Chokolademousse",
+      "price": "45",
+      "description": "Luftig dessert med rig chokoladesmag.",
+      "servings": 2,
+      "steps": [
+        "Smelt chokoladen.",
+        "Pisk æggehvider til skum.",
+        "Fold chokoladen ind i de piskede æggehvider."
+      ],
+      "ingredients": ["Chokolade", "Æggehvider", "Sukker"],
+      "glutenfri": true,
+      "vegansk": false
+    }
+  ]
+  
